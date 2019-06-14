@@ -23,10 +23,6 @@ public class Block {
      */
     public synchronized String computeMerkleRoot(ArrayList<String> lstItems) {
 
-		//#####################
-		//### ADD CODE HERE ###
-		//#####################
-
         ArrayList<String>copy = new ArrayList<>();
 
         for(int i = 0; i < lstItems.size(); i++ ){
@@ -95,8 +91,6 @@ public class Block {
         return new BlockchainUtil().generateHash(sMerkleRoot + iDifficulty + sMinerUsername + sNonce);
 
     }
-
-
 
     public int getDifficulty() {
         return iDifficulty;
@@ -168,8 +162,6 @@ public class Block {
         lstItems.add("t4");
         System.out.println("It made it this far");
         sMerkleRoot = oBlock.computeMerkleRoot(lstItems);
-
-
 
         if(sMerkleRoot.equals(sExpectedMerkleRoot_4Items)){
 
