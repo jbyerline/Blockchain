@@ -13,10 +13,6 @@ public class P2PMessageQueue {
      */
     public synchronized void enqueue(P2PMessage oMessage){
 
-		//#####################
-		//### ADD CODE HERE ###
-		//#####################
-
         if ( head == null && tail == null){
             head = oMessage;
             head.next = null;
