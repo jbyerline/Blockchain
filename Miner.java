@@ -22,11 +22,6 @@ public class Miner implements Runnable{
      */
     public boolean doProofOfWork(Block oBlock) {
 
-		/*
-		#####################
-		### ADD CODE HERE ###
-		#####################
-        */
 
 		String sZero = "";
 		for(int x = 0; x < oBlock.getDifficulty(); x++){
